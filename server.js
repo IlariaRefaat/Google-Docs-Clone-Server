@@ -8,8 +8,8 @@ const mongodbUrl =
 mongoose
   .connect(mongodbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch((err) => console.log(err));
-
-const io = require("socket.io")(3001, {
+const port = process.env.PORT || 3001;
+const io = require("socket.io")(port, {
   cors: {
     origin: "http://localhost:3000",
     methods: ["GET", "POST"],
