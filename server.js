@@ -3,7 +3,7 @@ const Document = require("./Document");
 const defaultValue = "";
 
 const mongodbUrl =
-  "mongodb+srv://IlariaRefaat:JBunPjlx2Cg8ENqL@cluster0.0sabb.mongodb.net/google-docs-clone?retryWrites=true&w=majority&maxPoolSize=1";
+  "mongodb+srv://IlariaRefaat:JBunPjlx2Cg8ENqL@cluster0.0sabb.mongodb.net/google-docs-clone?retryWrites=true&w=majority";
 
 mongoose
   .connect(mongodbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
